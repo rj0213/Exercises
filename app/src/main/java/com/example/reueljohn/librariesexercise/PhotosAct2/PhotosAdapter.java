@@ -1,5 +1,6 @@
 package com.example.reueljohn.librariesexercise.PhotosAct2;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

@@ -11,7 +11,7 @@ public class PhotosClient {
 
     public static Retrofit getClient(){
 
-        String BASE_URL = "https://jsonplaceholder.typicode.com";
+        String BASE_URL = "https://jsonplaceholder.typicode.com/";
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
