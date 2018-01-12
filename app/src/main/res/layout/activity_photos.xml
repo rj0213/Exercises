@@ -8,7 +8,7 @@
     tools:context="com.example.reueljohn.librariesexercise.PhotosAct.PhotosActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/usersList"
+        android:id="@+id/photosList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="1dp"
