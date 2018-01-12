@@ -19,12 +19,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PhotosAct.PhotosActivity" android:exported="true">
-         <!--   <intent-filter>
+        <activity
+            android:name=".PhotosAct.PhotosActivity"
+            android:exported="true">
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
+        <activity android:name=".UsersAct2.UsersActivity2"
+            android:exported="true"></activity>
     </application>
 
 </manifest>
