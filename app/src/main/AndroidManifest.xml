@@ -30,7 +30,10 @@
             </intent-filter>
             -->
         </activity>
-        <activity android:name=".UsersAct2.UsersActivity2"
+        <activity
+            android:name=".UsersAct2.UsersActivity2"
+            android:exported="true" />
+        <activity android:name=".PhotosAct2.PhotosActivity2"
             android:exported="true"></activity>
     </application>
 
