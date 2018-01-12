@@ -59,7 +59,7 @@ public class GetUserInfo extends AsyncTask<String, String ,String> {
             }
 
             recyclerView = (RecyclerView) activity.findViewById(R.id.usersList);
-            usersListAdapter = new UsersListAdapter(users);
+            usersListAdapter = new UsersListAdapter(activity,users);
             recyclerView.setAdapter(usersListAdapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(activity));
 

@@ -46,8 +46,6 @@ public class NetworkConnect {
             userJsonString = buffer.toString();
 
 
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

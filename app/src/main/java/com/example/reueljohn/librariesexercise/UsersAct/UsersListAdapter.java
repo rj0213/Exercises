@@ -1,6 +1,7 @@
 package com.example.reueljohn.librariesexercise.UsersAct;
 
 import android.app.Activity;
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,9 +23,9 @@ public class UsersListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
     private LayoutInflater mInflater;
 
 
-    public UsersListAdapter(List<Users> users){
-
+    public UsersListAdapter(Context context, List<Users> users){
         this.users = users;
+        mInflater = LayoutInflater.from(context);
 
 
     }
