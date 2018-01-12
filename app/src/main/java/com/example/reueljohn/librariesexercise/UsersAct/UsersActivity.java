@@ -1,7 +1,9 @@
-package com.example.reueljohn.librariesexercise;
+package com.example.reueljohn.librariesexercise.UsersAct;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.reueljohn.librariesexercise.R;
 
 public class UsersActivity extends AppCompatActivity {
 
