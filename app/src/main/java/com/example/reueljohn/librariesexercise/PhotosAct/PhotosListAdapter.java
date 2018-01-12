@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.reueljohn.librariesexercise.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,7 +20,7 @@ import java.util.List;
 public class PhotosListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private LayoutInflater mInflater;
-    private List<Photos> photos;
+    private List<Photos> photos = new ArrayList<>();
 
     public PhotosListAdapter(Context context, List<Photos> photos){
 
@@ -32,7 +33,7 @@ public class PhotosListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = mInflater.inflate(R.layout.users_list, parent, false);
+        View view = mInflater.inflate(R.layout.photos_list, parent, false);
         return new PhotosViewHolder(view);
     }
 
@@ -42,6 +43,7 @@ public class PhotosListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         PhotosViewHolder myHolder = (PhotosViewHolder) holder;
         myHolder.titleText.setText(photos.get(position).title);
         myHolder.urlText.setText(photos.get(position).url);
+        new GetPhotos(myHolder.photoImage).execute(photos.get(position).url);
 
     }
 

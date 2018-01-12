@@ -11,6 +11,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,7 +20,7 @@ import java.util.List;
 
 public class GetText extends AsyncTask<String, String,String> {
 
-    private List<Photos> photos;
+    private List<Photos> photos = new ArrayList<>();
     private Activity activity;
     private RecyclerView recyclerView;
     private PhotosListAdapter photosListAdapter;
