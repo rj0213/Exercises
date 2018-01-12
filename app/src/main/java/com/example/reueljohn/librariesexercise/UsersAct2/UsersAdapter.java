@@ -31,17 +31,25 @@ public class UsersAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View view = mInflater.inflate(R.layout.users_list, parent, false);
-        return null;
+        return new UsersViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
+        Users current = users.get(position);
+        UsersViewHolder myHolder = (UsersViewHolder) holder;
+        myHolder.nameText.setText(current.getName());
+        myHolder.usernameText.setText(current.getUsername());
+        myHolder.addressText.setText(current.getAddress().getStreet() + " " + current.getAddress().getCity());
+        myHolder.companyText.setText(current.getCompany().getName());
+
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return users.size();
     }
 
     class UsersViewHolder extends RecyclerView.ViewHolder {
